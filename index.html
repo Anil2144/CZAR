@@ -25,6 +25,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -45,7 +47,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="C:\Users\anilr\Downloads\IMG-20231104-WA0002.jpg" alt="">
+        <img src="assets\img\czarlogo.png" alt="">
         <!-- <h1>Czar Immigrations</h1>
         <span>.</span> -->
       </a>
@@ -53,12 +55,28 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#home" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <!-- <li><a href="index.html#services">Services</a></li> -->
+          <li class="dropdown has-dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="work-permit-visa.html">Work Permit Visa</a></li>
+              <li><a href="business-visa.html">Business Visa</a></li>
+              <li><a href="dependent-visa.html">Dependent Visa</a></li>
+              <li><a href="permanent-visa.html">Permanent Visa</a></li>
+              <li><a href="ielts-guidence.html">IELTS Guidance</a></li>
+              <li><a href="ielts-guidence.html">GRE Guidance</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="index.html#countries">Countries</a></li> -->
+          <li class="dropdown has-dropdown"><a href="index.html#countries"><span>Countries</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="usa.html">USA</a></li>
+              <li><a href="canada.html">Canada</a></li>
+              <li><a href="australia.html">Australia</a></li>
+              <li><a href="permanent-visa.html">United Kindom</a></li>
+            </ul>
+          </li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
 
@@ -73,7 +91,7 @@
   <main id="main">
 
     <!-- Hero Section - Home Page -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
 
       <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
 
@@ -87,8 +105,8 @@
             <p data-aos="fade-up" data-aos-delay="200">We are most trusted Immigration Agency</p>
           </div>
           <div class="col-lg-5">
-            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" class="form-control" placeholder="Enter email address">
+            <form action="https://formspree.io/f/mvojynbd" method="post" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+              <input name="email" type="text" class="form-control" placeholder="Enter email address">
               <input type="submit" class="btn btn-primary" value="Sign up">
             </form>
           </div>
@@ -97,39 +115,6 @@
 
     </section><!-- End Hero Section -->
 
-    <!-- Clients Section - Home Page -->
-     <!-- <section id="clients" class="clients">
-
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyxsu7Md2ORjTZJLLiDgXn80lab0oXV2SBw&usqp=CAU" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-
-    </section>End Clients Section -->
-    
      <!-- About Section - Home Page -->
      <section id="about" class="about">
 
@@ -143,7 +128,8 @@
               The division holds expertise in all types of visas such as permanent visa, work permit visa, business visa, dependent visa and many more, 
               which are catered by Czar Immigration consultants. 
               Our long standing expertise is helping professionals settle abroad with ease and with smooth transition. 
-              We serve to the most popular destinations like <b>USA, Canada, Australia, United Kindom, Israil, Germany </b> etc...</p>
+              We serve to the most popular destinations like <b>USA, Canada, Australia, United Kindom, Israel, Germany </b> etc...</p>
+            <p style="font-family: Times New Roman, Times, serif;">Being one of the premier immigration consultants in Hyderabad, we will offer end-to-end support in achieving your abroad dream. Whatever your reasons for immigrating abroad, we will facilitate the appropriate means for achieving the purpose.</p>
             <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
           </div>
           <div class="content col-lg-6">
@@ -172,7 +158,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Work Permit Visa</a></h4>
+                <h4 class="title"><a href="work-permit-visa.html" class="stretched-link">Work Permit Visa</a></h4>
                 <p class="description">A work visa is a permit that gives you the right to work and live in a country other than your country of residence. You have to meet several qualifying conditions to qualify for a work visa, which change based on which country you want to work in.</p>
               </div>
             </div>
@@ -183,7 +169,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Business Visa</a></h4>
+                <h4 class="title"><a href="business-visa.html" class="stretched-link">Business Visa</a></h4>
                 <p class="description">As the world opens up to more business between countries, a golden opportunity has emerged for entrepreneurs. Business Visas help facilitate trade and business between different countries. These are typically short-stay visas and allow visa holders to conduct business in the countries they visit.</p>
               </div>
             </div><!--https://www.y-axis.com/visa/business/-->
@@ -191,9 +177,9 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-people-fill"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Dependent Visa</a></h4>
+                <h4 class="title"><a href="dependent-visa.html" class="stretched-link">Dependent Visa</a></h4>
                 <p class="description">A dependent visa is a kind of visa. It allows the dependents of primary applicants to accompany them.</p>
               </div>
             </div><!--https://www.kansaz.in/dependent-visa/-->
@@ -201,9 +187,27 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-person-vcard-fill"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Permanent Visa</a></h4>
+                <h4 class="title"><a href="permanent-visa.html" class="stretched-link">Permanent Visa</a></h4>
+                <p class="description">The Permanent Residence status allows individuals to work and settle in a foreign country, indefinitely. It also offers many perks and benefits</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
+              <div>
+                <h4 class="title"><a href="permanent-visa.html" class="stretched-link">IELTS Guidance</a></h4>
+                <p class="description">The IELTS or the International English Language Testing System is a widely accepted test of the English language and accepted in many foreign universities and institutions all over the world, especially across Canada, Australia, the UK, New Zealand, and the USA.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-pencil-square"></i></div>
+              <div>
+                <h4 class="title"><a href="permanent-visa.html" class="stretched-link">GRE Guidance</a></h4>
                 <p class="description">The Permanent Residence status allows individuals to work and settle in a foreign country, indefinitely. It also offers many perks and benefits</p>
               </div>
             </div>
@@ -215,15 +219,23 @@
 
     </section><!-- End Services Section -->
 
-    <section class="wrapper">
-      <div class="container" data-aos="fade-up">
-          <!--  Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <p>COUNTRIES WE OFFER SUPPORT</p>
-            <h2>Immigration & Visa Services In Following Countries</h2>
-            <!-- <h2>Services</h2> -->
-            <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-          </div><!-- End Section Title -->
+    <section id="countries" class="wrapper countries">
+      <div class="container " data-aos="fade-up">
+        <!--  Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>COUNTRIES WE OFFER SUPPORT</p>
+          <h2>Immigration & Visa Services In Following Countries</h2>
+          <!-- <h2>Services</h2> -->
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up">
+          <div class="mapLocation">
+            <img src="https://ik.imagekit.io/upgrad1/abroad-images//home/images/sep-2023/map-subtract.svg?tr:w-534,q-70" width="534" height="94" alt="map-subtract" title="map-subtract" loading="lazy" class="mapSubtract">
+            <img src="https://ik.imagekit.io/upgrad1/abroad-images//home/images/sep-2023/map.svg?tr:w-534,q-70" width="534" height="284" alt="map" title="globe" loading="lazy" class="mapImage">
+          </div>
+          <p>With over 10+ countries and close to a million successes, we have established our presence in the field of visas and immigration consultancy. Please contact our representative for a free consultation.</p>
+          <!-- <h2>Services</h2> -->
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
          <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3 mb-4" onclick="location.href='./usa.html'">
                <div class="card text-dark card-has-bg click-col" style="background-image:url('http://azim.commonsupport.com/Visarzo/assets/images/resource/immigration-1.jpg');">
@@ -265,12 +277,12 @@
                  </div>
               </div>
            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 mb-4">
-               <div class="card text-dark card-has-bg click-col" style="background-image:url('http://azim.commonsupport.com/Visarzo/assets/images/resource/immigration-4.jpg');">
-                  <img class="card-img d-none" src="http://azim.commonsupport.com/Visarzo/assets/images/resource/immigration-4.jpg" alt=" Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="col-sm-6 col-md-3 col-lg-3 mb-4" onclick="location.href='./israel.html'">
+               <div class="card text-dark card-has-bg click-col" style="background-image:url('https://3.imimg.com/data3/TR/OV/MY-2231260/visit-israel-250x250.jpg');">
+                  <img class="card-img d-none" src="https://3.imimg.com/data3/TR/OV/MY-2231260/visit-israel-250x250.jpg" alt=" Lorem Ipsum Sit Amet Consectetur dipisi?">
                   <div class="card-img-overlay d-flex flex-column">
                      <div class="card-body">
-                        <h4 class="card-title mt-0 "><a class="text-white" herf="https://creativemanner.com">NewZealand</a></h4>
+                        <h4 class="card-title mt-0 "><a class="text-white" herf="./israel.html">Israel</a></h4>
                      </div>
                   </div>
                </div>
@@ -306,6 +318,7 @@
               </div>
            </div>
          </div>
+        </div><!-- End Section Title -->
       </div>
    </section>
 
@@ -363,77 +376,6 @@
       </div>
 
     </section><!-- End Stats Section -->
-    
-
-    <!-- Team Section - Home Page -->
-    <section id="team" class="team">
-
-      <!--  Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- End Team Section -->
 
     <!-- Testimonials Section - Home Page -->
     <section id="testimonials" class="testimonials">
@@ -445,8 +387,7 @@
           <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
             <h3>Testimonials</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              We build trust. Client Satisfaction is the most significant service, we can provide to our people. 
             </p>
           </div>
 
@@ -473,10 +414,10 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
                       <div>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo & Founder</h4>
+                        <h3>Krunal</h3>
+                        <h4>CEO and CO-Founder</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -484,7 +425,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                      <span>I would like to thank CZAR from bottom of my heart, my visa was approved for UK.I would personally like to thank Ram sir and team as they have worked really hard in most efficient way. From the day 1 they have worked arduously in filing all the paperwork. I must say honestly that CZAR is very responsive and answered all my doubts and they never let me felt skeptic about anything which is so considerate. Not only this CZAR also took care of my interview preparation. Again big thank you to Ram sir and team for support and providing me this great service. I personally highly recommend CZAR Immigrations for all the visa services.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -493,10 +434,10 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
                       <div>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
+                        <h3>Darshini</h3>
+                        <h4>Master's Student</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -504,72 +445,11 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                      <span>I'm Darshini. I'm a student of university of Portsmouth in United Kingdom. It was my dream to do my master's in the UK. I have done my every process for my Master's from CZAR immigrations they are very cooperative & they give real, true guidance. They have good knowledge & experience about the admission process and visa process as well. CZAR is working like a team they make your course according to your interest. I recommended CZAR to my all friends & relatives who wants to go abroad for their study.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
                 </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -638,9 +518,10 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://submit-form.com/ZJzHGJwA" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+                <input type="hidden" name="_redirect" value="www.sunilca.com" />
+                <input type="hidden" name="_append" value="false" />
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
@@ -670,10 +551,79 @@
           </div><!-- End Contact Form -->
 
         </div>
+        <br/>
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3805.016055381378!2d78.496697!3d17.506747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDMwJzI0LjMiTiA3OMKwMjknNDguMSJF!5e0!3m2!1sen!2sin!4v1700300223968!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
       </div>
 
     </section><!-- End Contact Section -->
+
+    <!-- Faq Section - Home Page -->
+    <section id="faq" class="faq">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Why CZAR Immigration Is The Best Immigration Consultants In Hyderabad?</span></h3>
+                <div class="faq-content">
+                  <p>CZAR Immigration is one of the best immigration consultants in Hyderabad with years of experience and expertise in the immigration consultancy industry. The result-oriented and professional service we provide along with honesty and integrity while keeping our client's immigration goals as our top priority enables us to keep providing results with an excellent track record.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Which countries do we provide services for?</span></h3>
+                <div class="faq-content">
+                  <p>We provide services for all the major immigration destinations and countries such as the US, UK, Australia, New Zealand, Canada, Israel, and European countries among others. We are also the best immigration consultants in Hyderabad for Canada and other top immigration destinations.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>How long does it take to obtain a visa through an immigration consultant?</span></h3>
+                <div class="faq-content">
+                  <p>The time it takes to obtain a visa through an immigration consultant can vary depending on the type of visa, country of application, and processing time of the immigration authorities. Generally, it can take anywhere from a few weeks to several months.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Which Country Should You Migrate from Hyderabad?</span></h3>
+                <div class="faq-content">
+                  <p>As Indians we wish to migrate to countries that offer a wholesome environment to us. To live at a place that is colorful, vibrant and welcoming. Furthermore, a country that provides better growth opportunities, health facilities, world class education and more.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Faq Section -->
 
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
